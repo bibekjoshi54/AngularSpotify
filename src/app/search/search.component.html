@@ -1,3 +1,19 @@
-<p>
-  search works!
+<h1>
+  Need Music
+</h1>
+<p class="lead">
+Use Angular Spotify to search for the new release and find the artist.
 </p>
+<form class="form-horizontal"
+              novalidate
+              [formGroup] = "searchForm">
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control"
+                               id="searchStrId"
+                               type="text"
+                               placeholder="Search your artist ....."
+                               formControlName = "searchStr"  (keyup)="searchMusic()"/>
+                </div>
+              </fieldset>
+</form>
